@@ -6,7 +6,7 @@ This approach avoids data redundancy and better reflects real-world hierarchies,
 
 It enables visibility into client risk exposure, threat mitigation performance, and employee security traininig.
 
-## 📊 Goals
+## Goals
 
 Enable analysis of:
 
@@ -15,7 +15,7 @@ Enable analysis of:
 - Cost savings from prevented attacks
 - Training completion rates by department
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```
 cybersecurity-data-model/
@@ -33,13 +33,13 @@ cybersecurity-data-model/
 └── LICENSE
 ```
 
-## 📐 Schema Diagram
+## Schema Diagram
 
 You can visualize the schema at: [dbdiagram.io](https://dbdiagram.io) using the `cybersecurity_data_model.dbml` file
 
 ---
 
-# Assumptions
+## Assumptions
 
 ### Attack
 An attack represents any detected security threat or breach attempt against a client device.
