@@ -1,0 +1,11 @@
+id,first_name,last_name,email,role,department_id,client_id,created_at
+1,Carolyn,Henderson,dudleynicholas@hotmail.com,"Chemist, analytical",2,1,2025-04-26 17:02:28
+2,Anna,Ramirez,barbara10@hotmail.com,Art gallery manager,1,2,2025-04-01 21:16:14
+3,Jennifer,Lewis,tracie31@ramirez-reid.com,Clinical molecular geneticist,1,1,2025-04-13 17:51:05
+4,Jacqueline,Gallagher,michael41@reid.info,"Designer, ceramics/pottery",4,2,2025-02-18 19:40:28
+5,Robert,Garcia,veronica83@hotmail.com,"Designer, jewellery",1,2,2025-04-18 10:13:10
+6,Shane,James,perezantonio@yahoo.com,"Pharmacist, hospital",1,1,2025-01-03 05:30:19
+7,Joshua,Howard,carl95@gmail.com,"Therapist, occupational",1,1,2025-01-23 05:50:59
+8,Misty,Cooper,pwilkerson@yahoo.com,Bonds trader,2,2,2025-04-15 06:27:47
+9,Katherine,Baker,donald88@burgess-patterson.org,Musician,2,2,2025-02-21 19:29:43
+10,Erik,Williams,jeffrey28@yahoo.com,Museum/gallery curator,1,2,2025-05-05 11:05:54

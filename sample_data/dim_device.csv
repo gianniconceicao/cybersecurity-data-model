@@ -1,0 +1,9 @@
+id,hostname,ip_address,operating_system,device_group,user_id,created_at
+1,desktop-14.moore-smith.com,113.6.64.5,Windows,Endpoint,7,2025-04-15 17:00:44
+2,lt-28.harrell.net,46.186.51.36,Windows,Mobile,2,2025-01-26 16:37:04
+3,lt-32.farmer-ryan.net,128.117.208.149,Linux,Endpoint,9,2025-04-21 21:15:13
+4,db-95.smith-hickman.com,67.196.150.120,Windows,Server,5,2025-04-22 21:20:27
+5,srv-03.arroyo.com,112.128.170.223,Windows,Mobile,10,2025-04-02 18:48:23
+6,web-82.keller.com,210.68.118.162,Linux,Endpoint,6,2025-02-17 04:26:57
+7,desktop-89.brandt-hickman.com,12.116.164.147,Windows,Mobile,10,2025-04-02 20:12:49
+8,email-46.santos.com,141.182.14.78,Linux,Server,4,2025-03-21 01:02:12
