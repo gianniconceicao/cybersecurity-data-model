@@ -1,0 +1,120 @@
+// Cybersecurity Data Model
+
+// ------------------------
+// DIMENSION TABLES
+// ------------------------
+
+Table dim_client {
+  id integer [primary key]
+  name varchar
+  industry varchar
+  created_at timestamp
+}
+
+Table dim_department {
+  id integer [primary key]
+  name varchar
+  client_id integer [not null]
+  created_at timestamp
+}
+
+Table dim_user {
+  id integer [primary key]
+  first_name varchar
+  last_name varchar
+  email varchar
+  role varchar
+  department_id integer [not null]
+  client_id integer [not null]
+  created_at timestamp
+}
+
+Table dim_device {
+  id integer [primary key]
+  hostname varchar
+  ip_address varchar
+  operating_system varchar
+  device_group varchar
+  user_id integer [not null]
+  created_at timestamp
+}
+
+Table dim_date {
+  id integer [primary key]
+  date date
+  year integer
+  month integer
+  day integer
+  week integer
+  quarter integer
+  is_weekend boolean
+}
+
+Table dim_attack_origin {
+  id integer [primary key]
+  origin varchar // e.g., 'external', 'internal', 'red_team'
+}
+
+Table dim_vulnerability {
+  id integer [primary key]
+  type varchar
+  severity varchar
+  status varchar
+  detection_timestamp timestamp
+  created_at timestamp
+}
+
+Table dim_mitigation {
+  id integer [primary key]
+  mitigation_action text
+  response_team varchar
+  mitigation_strategy varchar
+  expected_duration_hours integer
+  created_at timestamp
+}
+
+// ------------------------
+// FACT TABLES
+// ------------------------
+
+Table fact_attacks {
+  id integer [primary key]
+  device_id integer [not null]
+  date_id integer [not null]
+  vulnerability_id integer [not null]
+  attack_type varchar
+  attack_origin_id integer [not null]
+  mitigation_id integer
+  detection_timestamp timestamp
+  prevented boolean
+  estimated_cost numeric
+  created_at timestamp
+}
+
+Table fact_security_training {
+  id integer [primary key]
+  user_id integer [not null]
+  date_id integer [not null]
+  training_type varchar
+  completed boolean
+  completion_timestamp timestamp
+  created_at timestamp
+}
+
+// ------------------------
+// RELATIONSHIPS
+// ------------------------
+
+Ref: dim_device.user_id > dim_user.id
+Ref: dim_user.client_id > dim_client.id
+Ref: dim_user.department_id > dim_department.id
+Ref: dim_department.client_id > dim_client.id
+
+Ref: fact_attacks.device_id > dim_device.id
+Ref: fact_attacks.date_id > dim_date.id
+Ref: fact_attacks.vulnerability_id > dim_vulnerability.id
+Ref: fact_attacks.attack_origin_id > dim_attack_origin.id
+Ref: fact_attacks.mitigation_id > dim_mitigation.id
+
+Ref: fact_security_training.user_id > dim_user.id
+Ref: fact_security_training.date_id > dim_date.id

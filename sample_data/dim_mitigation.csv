@@ -1,0 +1,11 @@
+id,mitigation_action,response_team,mitigation_strategy,expected_duration_hours,created_at
+1,Account disabled,SOC,Planned,2,2025-04-27 22:04:22
+2,Patch,SOC,Immediate,22,2025-05-12 20:16:16
+3,Firewall update,External,Deferred,11,2025-05-08 18:52:32
+4,Account disabled,IT Ops,Planned,24,2025-04-13 13:43:46
+5,Account disabled,IT Ops,Immediate,17,2025-05-10 04:46:24
+6,Account disabled,SOC,Deferred,10,2025-04-27 19:24:59
+7,Patch,IT Ops,Deferred,13,2025-04-18 04:18:07
+8,Account disabled,External,Deferred,11,2025-04-19 18:04:31
+9,Account disabled,SOC,Deferred,3,2025-04-26 00:44:24
+10,Patch,SOC,Immediate,2,2025-04-18 18:05:56
